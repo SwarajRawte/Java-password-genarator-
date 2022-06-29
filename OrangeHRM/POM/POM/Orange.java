@@ -1,4 +1,4 @@
-package POM;
+package POM;  //without browser factory class 2 main class 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
