@@ -1,4 +1,4 @@
-package POM;
+package POM; // for with browser factory class 1 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
