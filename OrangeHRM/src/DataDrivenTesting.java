@@ -32,9 +32,15 @@ public class DataDrivenTesting {
 	@Test(dataProvider="testdata")
 	
 	public void verifiy(String uname, String pwd) {
-		 driver.findElement(By.name("txtUsername")).sendKeys(uname);
-	        driver.findElement(By.name("txtPassword")).sendKeys(pwd);
-	        driver.findElement(By.xpath("//*[@id=\"btnLogin\"]")).click();
+		s1=driver.findElement(By.xpath("//*[@id=\"txtUsername\"]")).isDisplayed();
+        System.out.println(s1 + " Username is present");
+        driver.findElement(By.name("txtUsername")).sendKeys(uname);
+        s2=driver.findElement(By.xpath("//*[@id=\"txtPassword\"]")).isDisplayed();
+        System.out.println(s2 + " password is present");
+        driver.findElement(By.name("txtPassword")).sendKeys(pwd);
+        s3= driver.findElement(By.xpath("//*[@id=\"btnLogin\"]")).isDisplayed();
+        System.out.println(s3 + " click button is present");
+        driver.findElement(By.xpath("//*[@id=\"btnLogin\"]")).click(); 
 	        
 	        
 	        
