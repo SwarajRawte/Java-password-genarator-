@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
 public class Listeners2 implements ITestListener {
+	Boolean s1,s2,s3;
 	@Test
 	public void login() {
 		 System.setProperty("webdriver.chrome.driver",
