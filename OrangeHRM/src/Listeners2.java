@@ -14,6 +14,13 @@ public class Listeners2 implements ITestListener {
 		 System.setProperty("webdriver.chrome.driver",
 	                "C:\\\\Users\\\\HCL TSS\\\\Downloads\\\\chromedriver_win32 (1)\\\\chromedriver.exe");
 	        WebDriver driver = new ChromeDriver();
+		 driver.get("https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveList");
+	        s1=driver.findElement(By.xpath("//*[@id=\"txtUsername\"]")).isDisplayed();// it check the  box is present 
+	        System.out.println(s1 + " Username is present");
+	        s2=driver.findElement(By.xpath("//*[@id=\"txtPassword\"]")).isDisplayed();
+	        System.out.println(s2 + " password is present");
+	        s3= driver.findElement(By.xpath("//*[@id=\"btnLogin\"]")).isDisplayed();
+	        System.out.println(s3 + " click button is present");
 	        driver.get("https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveList");
 	        driver.findElement(By.id("txtUsername")).sendKeys("Admin" );
 		    driver.findElement (By.id("txtPassword") ).sendKeys("admin123");
