@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form </title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h1>Payment form</h1>
+            <hr>
+            <h2>User Information </h2>
+            <p>Name:*
+                <input type="text"required name="name" placeholder="Enter name"
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Gender</legend>
+                    Male <input type="radio" name="gender" id="male" value="" required> 
+                    Female <input type="radio" name="gender" id="female" value="" required>
+
+                </fieldset>
+            </p>
+            <p 
+            > Address:
+                <textarea placeholder=" Enter your address" name="address" id="address"  rows="10">
+
+                </textarea>
+            </p>
+            <p>
+                Email:
+                <input type="email" name="email" id="email" required placeholder="Enter email">
+            </p>
+            <p>
+                pincode:
+                <input type="Number" name="pincode" id="pincode " placeholder="Enter Pincode">
+            </p>
+            
+                <h2>Payment Information</h2>
+            <p>Card type:
+                <select name="Select Card Type" >
+                    <option value=" card type">Select card type</option>
+                <option value="Credit card">Credit Card</option>
+                <option value="Debit card">Debit card</option>
+                </select>
+            </p>
+            <p>
+                Card Number:*
+                <input type="Number" class="card" id="card" placeholder="111 222 3333 4444">
+
+            </p>
+            <p>
+                Expiration Date:
+                <input type="date" name="date" id="date" placeholder="dd/mm/yyyy">
+            </p>
+           
+
+            <p>
+                CVV:
+                  <input type="number" name="cvv" id="cvv" placeholder="123">
+            </p>
+        <button class="button" id="button">
+    pay now
+        </button>
+       
+        </form>
+    </div>
+    <a href="/pay.html">for pay click here</a>
+</body>
+</html>

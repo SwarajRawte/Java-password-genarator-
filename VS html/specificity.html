@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="specificity.css">
+    <style>
+        .box{
+            border: 10px solid black;
+            font-size: 100%;
+            width: 100px;
+            height: 100px;
+            overflow: scroll;
+        }
+        .imp{
+            color: aqua !important;
+        }
+      .class1{
+        color: chartreuse;
+      }
+      .class2{
+        color: unset;
+      }
+    ul#summer-drinks li.favourite { 
+        color: blueviolet;
+
+    }
+    ul#summer-drinks li{
+        font-size: 12px;
+        color: brown;
+        font-weight: normal;
+    }
+   </style>
+</head>
+<body>
+    <ul id="summer-drinks">
+        <li>Mountain Dew</li>
+        <li> apple</li>
+        <li class="favourite"> thups up</li>
+    </ul>
+
+    <ul>
+        <li>defult <a href="">Link</a>color</li>
+        <li class="class1">Inheritance <a href="">Linl</a>color</li>
+        <li class="class2">initial <a href="">Link</a>color</li>
+        <li>Unset <a href="">Link</a>color</li>
+    </ul>
+    <!--impoerant-->
+  <p class="imp" style="color: red;">this is red</p>
+<!--overflow -->
+
+<div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde porro soluta fugit beatae. Corporis eligendi esse voluptatem sit recusandae obcaecati animi doloremque distinctio modi aspernatur et, vitae delectus a.</div>
+<p>this content is outside of the box.</p>
+<a href="/Payment.html">Payment</a>
+</body>
+</html>

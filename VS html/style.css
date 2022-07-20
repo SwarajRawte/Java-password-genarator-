@@ -1,0 +1,33 @@
+p{
+    color: rgb(43, 61, 226);
+    background-color: aqua;
+}
+a{
+    color: rgb(240, 33, 222);
+}
+div{
+    background-color: aqua;
+}
+span{
+    color: blueviolet;
+    background-color: azure;
+}
+nav {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    float: left; 
+
+}
+nav{
+    background-color: black;
+    overflow: hidden;
+}
+nav:hover{
+    color: tomato;
+
+}
+nav:visited{
+    color: royalblue;
+}
